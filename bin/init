@@ -5,7 +5,7 @@ if [ ! -e "${SSL_CERTFILE}" ] || [ ! -e "${SSL_KEYFILE}" ]; then
 fi
 export DB_DIRECTORY='/data'
 export COIN=Denarius
-export DB_ENGINE=leveldb
+export DB_ENGINE=rocksdb
 
 exec /electrumx/electrumx_compact_history
 exit
