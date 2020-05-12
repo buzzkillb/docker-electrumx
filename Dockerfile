@@ -10,7 +10,7 @@ RUN VERSION=$(cat /tmp/VERSION) && \
     apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main leveldb-dev && \
     apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing rocksdb-dev && \
     pip install aiohttp pylru plyvel websockets python-rocksdb tribushashm && \
-    git clone -b $VERSION https://github.com/kyuupichan/electrumx.git && \
+    git clone -b $VERSION https://github.com/buzzkillb/electrumx && \
     cd electrumx && \
     python setup.py install && \
     apk del git build-base && \
