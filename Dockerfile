@@ -1,4 +1,4 @@
-FROM python:3.7-alpine3.7
+FROM python:3.7-alpine3.11
 LABEL maintainer="Luke Childs <lukechilds123@gmail.com>"
 
 COPY ./bin /usr/local/bin
@@ -8,8 +8,9 @@ RUN VERSION=$(cat /tmp/VERSION) && \
     chmod a+x /usr/local/bin/* && \
     apk add --no-cache git build-base openssl && \
     apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community leveldb-dev && \
-    pip install aiohttp aiorpcX ecdsa plyvel pycodestyle pylru pytest-asyncio pytest-cov Sphinx tribus-hash websockets && \
-    git clone -b $VERSION https://github.com/kyuupichan/electrumx.git && \
+    pip install aiohttp aiorpcX ecdsa plyvel pycodestyle pylru pytest-asyncio pytest-cov Sphinx websockets && \
+    pip3 install tribushashm && \
+    git clone https://github.com/carsenk/electrumx.git && \
     cd electrumx && \
     python setup.py install && \
     apk del git build-base && \
