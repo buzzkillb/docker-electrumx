@@ -1,10 +1,10 @@
 
 # docker-electrumx
+[![Docker Automated build](https://img.shields.io/docker/automated/buzzkillb/docker-electrumx.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/buzzkillb/docker-electrumx/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/buzzkillb/docker-electrumx.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/buzzkillb/docker-electrumx/)
+[![Docker Stars](https://img.shields.io/docker/stars/buzzkillb/docker-electrumx.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/buzzkillb/docker-electrumx/)
 
-[![Build Status](https://travis-ci.org/lukechilds/docker-electrumx.svg?branch=master)](https://travis-ci.org/lukechilds/docker-electrumx)
-[![Image Layers](https://images.microbadger.com/badges/image/lukechilds/electrumx.svg)](https://microbadger.com/images/lukechilds/electrumx)
-[![Docker Pulls](https://img.shields.io/docker/pulls/lukechilds/electrumx.svg)](https://hub.docker.com/r/lukechilds/electrumx/)
-[![tippin.me](https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@lukechilds/F0918E)](https://tippin.me/@lukechilds)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.11-green.svg?style=for-the-badge)](https://alpinelinux.org/) 
 
 > Run an Electrum server with one command
 
