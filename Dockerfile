@@ -24,6 +24,7 @@ ENV DB_DIRECTORY /data
 ENV SERVICES=tcp://:50001,ssl://:50002,wss://:50004,rpc://0.0.0.0:8000
 ENV SSL_CERTFILE ${DB_DIRECTORY}/electrumx.crt
 ENV SSL_KEYFILE ${DB_DIRECTORY}/electrumx.key
+ENV BANNER_FILE ${DB_DIRECTORY}/banner_file.txt
 ENV HOST ""
 WORKDIR /data
 
