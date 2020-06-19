@@ -48,7 +48,7 @@ docker run \
   -e DAEMON_URL=http://user:pass@127.0.01:32369 \
   -e COIN=Denarius \
   -p 50002:50002 \
-  buzzkillb/docker-electrumx:dcompact
+  buzzkillb/docker-electrumx:rocksdbcompact
   ```
 crontab (daily compaction cronjob)  
 ```
